@@ -47,3 +47,8 @@ body.theme-mall .data-table td:first-child { display: inline-block; width: auto;
 body.theme-mall .workflow-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 body.theme-mall .workflow-card { text-align: center; }
 body.theme-mall .workflow-card span { display: inline-block; padding: 7px 12px; border-radius: 999px; background: var(--accent-soft); }
+
+/* BACKEND: full-stack status controls */
+.backend-controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+.backend-controls .mini-note { margin: 0; }
+.backend-controls .mini-note.error { color: #fca5a5; border-color: rgba(248, 113, 113, .5); }
