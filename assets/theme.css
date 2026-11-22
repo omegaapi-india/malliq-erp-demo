@@ -1,0 +1,49 @@
+/* MallIQ — distinct theme layer. Local SVG art only. */
+body.theme-mall {
+  --accent: #c084fc;
+  --accent-2: #fbbf24;
+  --accent-ink: #220c33;
+  --accent-soft: #c084fc26;
+  --theme-bg: #150c20;
+}
+body.theme-mall .eyebrow { color: var(--accent-2); }
+body.theme-mall h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-2)); background-clip: text; color: transparent; }
+body.theme-mall .brand-mark,
+body.theme-mall .header-cta,
+body.theme-mall .button.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--accent-ink); border-color: transparent; }
+body.theme-mall .site-nav a:hover { color: var(--accent-2); }
+body.theme-mall .mini-tag { background: var(--accent-soft); color: var(--accent-2); }
+body.theme-mall .dot.green { background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+body.theme-mall .hero { background: radial-gradient(circle at 85% 20%, var(--accent-soft), transparent 34%), var(--theme-bg); }
+body.theme-mall .hero-card { background: linear-gradient(160deg, var(--theme-bg), #0b1120); }
+body.theme-mall .mini-note { background: var(--accent-soft); color: var(--accent-2); }
+body.theme-mall .section.soft { background: var(--accent-soft); }
+body.theme-mall .data-table .status-cell { color: var(--accent-2); }
+body.theme-mall .data-table .status-cell.review { color: #fbbf24; }
+body.theme-mall .workflow-card span { color: var(--accent-2); }
+body.theme-mall .log-item { border-left: 3px solid var(--accent); }
+body.theme-mall .hero-art,
+body.theme-mall .flow-banner img { display: block; width: 100%; height: auto; border-radius: 16px; }
+body.theme-mall .hero-art { margin: 16px 0 8px; }
+body.theme-mall .flow-banner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 18px; align-items: center; margin-top: 20px; padding: 18px; border: 1px solid var(--line); border-radius: 20px; background: rgba(8, 13, 24, .55); }
+body.theme-mall .flow-banner p { margin: 0; color: #a9bbcd; font-size: .86rem; }
+body.theme-mall .hero-card { border-radius: 20px; box-shadow: 0 18px 60px rgba(192,132,252,.22); }
+body.theme-mall .strip div { border-bottom: 3px solid var(--accent2); }
+@media (max-width: 780px) {
+  body.theme-mall .flow-banner { grid-template-columns: 1fr; }
+  body.theme-mall .hero-card { transform: none; }
+}
+
+
+/* LAYOUT: mall directory */
+body.theme-mall .strip div { text-align: center; }
+body.theme-mall .data-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+body.theme-mall .data-table, body.theme-mall .data-table tbody, body.theme-mall .data-table tr, body.theme-mall .data-table td { display: block; width: 100%; }
+body.theme-mall .data-table tbody { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 14px; }
+body.theme-mall .data-table tr { padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(192, 132, 252, .08); }
+body.theme-mall .data-table td { border: 0; padding: 3px 0; }
+body.theme-mall .data-table td::before { content: attr(data-label) ': '; display: block; color: var(--muted); font-size: .66rem; font-weight: 800; text-transform: uppercase; }
+body.theme-mall .data-table td:first-child { display: inline-block; width: auto; padding: 5px 11px; border-radius: 9px; background: var(--accent-soft); color: var(--accent2); font-weight: 900; }
+body.theme-mall .workflow-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+body.theme-mall .workflow-card { text-align: center; }
+body.theme-mall .workflow-card span { display: inline-block; padding: 7px 12px; border-radius: 999px; background: var(--accent-soft); }
